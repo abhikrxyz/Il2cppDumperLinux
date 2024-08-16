@@ -22,9 +22,11 @@ The program will then generate all the output files in current working directory
 ## Build
 To build the project, open a terminal in the project directory and execute:
 ```
-$ sudo apt install dotnet-sdk-8.0
-$ cd Il2cppDumper
-$ dotnet build -c Release
+sudo apt install dotnet-sdk-8.0
+git clone https://github.com/Parsa307/Il2cppDumperLinux.git
+cd Il2cppDumperLinux
+cd Il2cppDumper
+dotnet build -c Release
 ```
 And you're done!
 
