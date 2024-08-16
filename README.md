@@ -1,9 +1,5 @@
 # Il2CppDumper
 
-[![Build status](https://ci.appveyor.com/api/projects/status/anhqw33vcpmp8ofa?svg=true)](https://ci.appveyor.com/project/Perfare/il2cppdumper/branch/master/artifacts)
-
-中文说明请戳[这里](README.zh-CN.md)
-
 Unity il2cpp reverse engineer
 
 ## Features
@@ -17,16 +13,20 @@ Unity il2cpp reverse engineer
 * Support bypassing simple PE protection
 
 ## Usage
-
-Run `Il2CppDumper.exe` and choose the il2cpp executable file and `global-metadata.dat` file, then enter the information as prompted
+```
+./Il2CppDumper <executable-file> <global-metadata> <output-directory>
+```
 
 The program will then generate all the output files in current working directory
 
-### Command-line
-
+## Build
+To build the project, open a terminal in the project directory and execute:
 ```
-Il2CppDumper.exe <executable-file> <global-metadata> <output-directory>
+$ sudo apt install dotnet-sdk-8.0
+$ cd Il2cppDumper
+$ dotnet build -c Release
 ```
+And you're done!
 
 ### Outputs
 
